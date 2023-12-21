@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>nav</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="description" content="this is a description">
+    <meta name="keywords" content="bed and breakfast,Scotland,coast">
+    <meta name="author" content="Daniel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <table class="mytable">
+        <tr class="top-row">
+            <td><h1> Welcome to the information page !</h1></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Explore this hidden gem. Nestled in a picturesque setting, this spot offers tranquility and beauty. You can print the map for easy navigation or click the email link to connect with the owners.</p>
+                <button onclick="window.print()">Print this page</button>
+                <a href="mailto:info@cosygetaways.com">Send Email</a>
+            </td>
+        </tr>
+        <tr class="middle-row">
+            <td>
+                <gmp-map center="56.25787353515625,-2.638094186782837" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="56.25787353515625,-2.638094186782837" title="My location">
+                    </gmp-advanced-marker>
+                </gmp-map>
+            </td>
+        </tr>
+        <tr class="bottom-row">
+            <td><h1><a href="nav.html">Click here to return to navigation !</a></h1></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="javascript/java.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=console.debug&libraries=maps,marker&v=beta"></script>
